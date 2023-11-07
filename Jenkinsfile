@@ -35,7 +35,7 @@ pipeline{
         stage('SONARQUBE') {
             steps{
 
-             	sh "mvn clean verify sonar:sonar -Dsonar.projectKey=devops -Dsonar.projectName='devops' -Dsonar.host.url=http://192.168.56.2:9000 -Dsonar.token=sqp_f9d5c0e7497edcecee9f583d39d1fa85e64eb904 "
+             	sh "mvn clean verify sonar:sonar -Dsonar.projectKey=devops -Dsonar.projectName='devops' -Dsonar.host.url=http://192.168.56.2:9000  -Dsonar.token=sqp_22e6bf2bbf9db68e0dd26282d4ab793a78a4aa6d "
             }
         }
 
